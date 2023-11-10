@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranav - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+body{
+    background-color: rgb(34, 34, 99)
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(105, 89, 89);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    color: rgb(121, 121, 239);
+    font-size: 1.01rem;
+}
+main hr{
+    border: 0;
+    background:rgb(164, 146, 181);
+    height: 1.2px;
+    margin: 40px 84px;
+}
+.left{
+    font-size: 1.5rem;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+}
+.firstSection > div{
+    width: 30%;
+}
+.leftSection{
+    font-size: 1.3rem;
+}
+.leftSection.buttons{
+    padding: 50px;
+}
+.leftSection.btn{
+    padding: 12px;
+    background: #1e2167;
+    color: white;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.rightSection img{
+    width: 80%;
+}
+.purple{
+    color: rgb(125, 35, 209);
+}
+.text-gray{
+    color:gray;
+}
+#element{
+    color: rgb(125, 35, 209);
+}
+.secondSection{
+    max-width: 80vw;
+    margin: auto;
+}
+.secondSection h1{
+    font-size: 1.9rem;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">My Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Pranav Srivastava</span>
+                <div>I am a 2nd year student at SRMIST pursuing B.TECH in CSE.I'm also a</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="https://www.linkedin.com/in/pranav-srivastava-446112139?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                        <button class="btn">LinkedIn</button>
+                      </a>
+                      <a href="https://github.com/ps2956">
+                        <button class="btn">GitHub</button>
+                      </a>  
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have learned so far</span>
+            <h1>Skills</h1>
+            <div class="container row text-center ">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary "></i>
+                        <i class="fa-brands fa-java fa-stack-1x fa-inverse";></i>
+                    </span>                        
+                    <h4 class="my-3">Java</h4>
+                </div>
+                <div class="col-md-4 ">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa-brands fa-python fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Python</h4>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa-brands fa-html5 fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">HTML</h4>
+                </div>     
+            </div>
+            <hr>
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">My Projects</h2>
+            </div>
+            <div class="portfolio-item">
+                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-2x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="proj1.png" alt="..." />
+                </a>
+                <div class="portfolio-caption">
+                    <div class="portfolio-caption-heading">Text summariser</div>
+                    <div class="portfolio-caption-subheading text-muted">An NLP project</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-sm-6 mb-4">
+            <!-- Portfolio item 2-->
+            <div class="portfolio-item">
+                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-2x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="proj2.png" alt="..." />
+                </a>
+                <div class="portfolio-caption">
+                    <div class="portfolio-caption-heading">Virtual Memory Management</div>
+                    <div class="portfolio-caption-subheading text-muted">An Operating Systems Project</div>
+                </div>
+            </div>
+        </div>                 
+        </section>
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Text summariser</h2>
+                                    <p class="item-intro text-muted">An NLP Project.</p>
+                                    <img class="img-fluid d-block mx-auto" src="proj1.png" alt="..." />
+                                    <p>This application helps to summarize a text paragraph and tries to return the important points of the text.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>URL:</strong>
+                                            <a href="#"> click me! </a>
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            NLP
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Package Manager</h2>
+                                    <p class="item-intro text-muted">An Operating System Project.</p>
+                                    <img class="img-fluid d-block mx-auto" src="proj2.png" alt="..." />
+                                    <p>This is a package manager which helps to download and delete different packages in an operating system.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>URL:</strong>
+                                            <a href="#"> click me! </a>
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Operating Systems
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Passionate Programmer','Web Developing Enthusiast'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
